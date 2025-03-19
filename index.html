@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            max-width: 400px;
+            margin-top: 20px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            display: block;
+        }
+        .checkbox-group label, .radio-group label {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>My Favorite Activities</h2>
+    <ol type="I">
+        <li>Coding</li>
+        <li>Reading Books</li>
+        <li>Listening to Music</li>
+        <li>Traveling</li>
+        <li>Photography</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Nature</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Nature" width="600">
+
+    <!-- Contact Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Kevin Brandon</td>
+            <td>New York, USA</td>
+            <td>+1 123-456-7890</td>
+            <td>kevinbra@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane kimani</td>
+            <td>Los Angeles, USA</td>
+            <td>+1 987-654-3210</td>
+            <td>janekim@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael O</td>
+            <td>Kenya, KE</td>
+            <td>+254 789-456-123</td>
+            <td>michaelo@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Akinyi</td>
+            <td>Uganda, UG</td>
+            <td>+61 456-789-123</td>
+            <td>emilya@example.com</td>
+        </tr>
+        <tr>
+            <td>David Brown</td>
+            <td>Toronto, Canada</td>
+            <td>+1 234-567-8901</td>
+            <td>davidb@example.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6">
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="za">South Africa</option>
+            <option value="ug">Uganda</option>
+            <option value="canada">Canada</option>
+            <option value="ke">Kenya</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Interests:</legend>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+                <label><input type="checkbox" name="interests" value="reading"> Reading</label>
+                <label><input type="checkbox" name="interests" value="traveling"> Traveling</label>
+            </div>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia Elements -->
+    <h2>Listen to Relaxing Music</h2>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Watch a Sample Video</h2>
+    <video width="600" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
